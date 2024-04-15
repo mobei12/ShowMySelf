@@ -49,21 +49,21 @@ const Register: FC = (): ReactElement => {
 				<label className="block">
 					<span className="block text-base font-medium mb-1">用户名</span>
 					<input type="text" id="username" className='peer' name="username" placeholder="用户名" required />
-					<p className="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+					<p className="mt-2 invisible peer-invalid:visible text-orange-600 text-sm">
 						请输入用户名
 					</p>
 				</label>
 				<label className="block">
 					<span className="block text-base font-medium mb-1">密码</span>
 					<input type="password" id="password" className='peer' name="password" placeholder="密码" required />
-					<p className="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+					<p className="mt-2 invisible peer-invalid:visible text-orange-600 text-sm">
 						请输入密码
 					</p>
 				</label>
 				<label className="block">
 					<span className="block text-base font-medium mb-1">确认密码</span>
 					<input type="password" className='peer' id="confirmPassword" name="confirmPassword" placeholder="密码" required />
-					<p className="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+					<p className="mt-2 invisible peer-invalid:visible text-orange-600 text-sm">
 						请确认密码
 					</p>
 				</label>
