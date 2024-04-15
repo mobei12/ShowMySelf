@@ -41,7 +41,7 @@ const addMessageElement = (
 	divElement.setAttribute('class', 'mt-5');
 	const messageElement = document.createElement('span');
 	messageElement.textContent = msg;
-	messageElement.setAttribute('class', `font-semibold px-4 py-2 rounded-md  text-center ${getColor(type)}`);
+	messageElement.setAttribute('class', `font-semibold px-4 py-2 mt-10 rounded-md  text-center ${getColor(type)}`);
 	divElement.appendChild(messageElement);
 	setTimeout(() => {
 		divElement.remove();

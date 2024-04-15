@@ -8,7 +8,7 @@ import './App.scss';
 
 const RouterTag = () => {
 	const routes = routesWithGuard(routConfig);
-	return <div className="App dark:bg-gray-500 dark:text-white bg-gray-300  h-full">{useRoutes(routes)}</div>;
+	return <div className="App dark:bg-gray-500  dark:text-gray-600 bg-gray-300  h-full">{useRoutes(routes)}</div>;
 };
 const App = () => {
 	const { toggleTheme } = useTheme();
