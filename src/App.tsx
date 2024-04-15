@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { ConfigProvider, theme } from 'antd';
 import { useRoutes } from 'react-router-dom';
 import routesWithGuard from 'src/router';
 import routConfig from 'src/router/routesConfig';
@@ -12,7 +11,7 @@ const RouterTag = () => {
 	return <div className="App dark:bg-gray-500 dark:text-white bg-gray-300  h-full">{useRoutes(routes)}</div>;
 };
 const App = () => {
-	const { theme: currentTheme, toggleTheme } = useTheme();
+	const { toggleTheme } = useTheme();
 	useEffect(() => {
 		const localTheme = setTheme();
 		if (localTheme) {
@@ -20,11 +19,7 @@ const App = () => {
 		}
 	}, [toggleTheme]);
 	return (
-		<ConfigProvider
-			theme={{ algorithm: currentTheme === ETheme.LIGHT ? theme.defaultAlgorithm : theme.darkAlgorithm }}
-		>
-			<RouterTag />
-		</ConfigProvider>
+		<RouterTag />
 	);
 };
 export default App;

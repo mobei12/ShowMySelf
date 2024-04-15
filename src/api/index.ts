@@ -57,7 +57,7 @@ export class Request {
 				const status: number | null = err.response?.status || null;
 				const message: string = getInfoWithCode(status) || err.message;
 				if (status === 401) {
-					showMessage(message, 'error', 2, () => {
+					showMessage(message, EMessageType.error, 2, () => {
 						removeToken();
 						const dynamicPartRegex = /\/\/[^/]+\/(.*)/; // 匹配第一个斜杠后的所有部分
 						const dynamicPartMatch = window.location.href.match(dynamicPartRegex);

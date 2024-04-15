@@ -1,4 +1,3 @@
-import { Select } from 'antd';
 import { useEffect, useState } from 'react';
 import { setTheme as setLocalTheme } from 'src/utils';
 import { TTheme } from 'src/utils/tools';
@@ -22,7 +21,7 @@ const ToggleTheme = () => {
 		toggleTheme(value as ETheme);
 	};
 	return (
-		<Select onChange={handleChange} style={{ width: 160 }} value={`主题：${theme}`} options={options} />
+		<div>主题{theme}</div>
 	);
 };
 export default ToggleTheme;
