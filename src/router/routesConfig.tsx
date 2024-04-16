@@ -8,6 +8,7 @@ import Register from 'src/pages/User/Register';
 import NotFind from 'src/pages/404';
 import Home from 'src/pages/Layout';
 import PageTemplate from 'src/pages/Layout/PageTemplate';
+import ChartPage from 'src/pages/Layout/ChartPage';
 import ToDoList from 'src/pages/Layout/ToDoList';
 import Welcome from 'src/pages/Layout/Welcome';
 import AuthorityManagement from 'src/pages/Layout/UserManagement/AuthorityManagement';
@@ -34,6 +35,11 @@ const routConfig: ExtendedRouteObject[] = [
 				path: 'ToDoList',
 				title: 'ToDoList',
 				element: <ToDoList />,
+			},
+			{
+				path: 'ChartPage',
+				title: 'ChartPage',
+				element: <ChartPage />,
 			},
 			{
 				path: 'UserManagement',
