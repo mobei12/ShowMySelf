@@ -42,7 +42,7 @@ const Login: FC = () => {
 		<div className="form-container">
 			<form onSubmit={onFinish}>
 				<label className="block">
-					<span className="block text-base font-medium mb-1">用户名</span>
+					<span className="block text-base  font-medium mb-1 dark:text-#fff!">用户名</span>
 					<input type="text" id="username" className='peer' name="username" placeholder="用户名" required />
 					<p className="mt-2 invisible peer-invalid:visible text-orange-600 text-sm">
 						请输入用户名
@@ -56,7 +56,7 @@ const Login: FC = () => {
 					</p>
 				</label>
 				<div className='text-center'>
-					<button className='px-4 py-1 font-semibold cursor-pointer  bg-cyan-500 text-white rounded-md mt-4 shadow-sm' type="submit" disabled={loadings}>登录</button>
+					<button className='px-4 py-1 font-semibold cursor-pointer  bg-cyan-500 dark:bg-gray-100 dark:text-white rounded-md mt-4 shadow-sm' type="submit" disabled={loadings}>登录</button>
 				</div>
 				<div style={{ textAlign: 'right' }}>
 					<Link to="/user/register">注册</Link>

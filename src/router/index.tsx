@@ -5,7 +5,7 @@ import { Navigate } from 'react-router-dom';
 export default function routesWithGuard(routConfig: ExtendedRouteObject[]): ExtendedRouteObject[] {
 	const isLogin = !!cacheUserInfo();
 	return routConfig.map((item) => {
-		if (!isLogin && item.needAuth && item.path === '/home') {
+		if (!isLogin && !!item.needAuth && item.path === '/home') {
 			return {
 				...item,
 				element: <Navigate to="/user/login" />,

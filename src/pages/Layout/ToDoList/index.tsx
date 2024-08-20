@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { TodoProvider } from 'src/context/Todo';
 import AddTodo from './component/AddTodo';
-import ToDoList from './component/ToDolist';
+import ToDoList from './component/List';
 import './index.scss';
 
 const ToDoListContainer: FC = () => {
